@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetched Entries</title>
+</head>
+<body>
+    <h1>Fetched Entries</h1>
+    {% for entry in result %}
+        <p>Name: {{ entry[1] }}, Email: {{ entry[2] }}</p>
+    {% endfor %}
+    <br>
+    <a href="/"><button>Go Back</button></a>
+</body>
+</html>
+
